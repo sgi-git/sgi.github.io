@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@300&display=swap');
+
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {background-color: #f8f9fb; }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.center {
+	
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.header {
+	overflow: hidden; 
+	background-color: white; 
+	padding: 20px 10px; 
+	font-size: 40px;
+	font-family: 'Bangers', cursive;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+	
+.header a {
+	
+	color: black; 
+	text-align: center;
+	padding: 12px; 
+	text-decoration: none;
+	font-size: 40px;
+	line-height:25px; 
+	border-radius: 4px;
+}
+
+.header a.logo{
+	font-size: 40px; 
+	font-weight:bold; 
+	
+}
+
+
+.header a:hover{
+		color: #f8f9fb;
+        -webkit-filter: drop-shadow(2px 2px 2px #98b1d4);
+        filter: drop-shadow(2px 2px 2px #98b1d4);
+}
+
+.header-right{
+	float: right;
+	text-transform: uppercase;
+}
+
+.desc{
+	color: #000;
+	
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	margin: 0px 15px 0px 15px; /* top, right, bottom, left */
+}
+
+.title {
+	color: #000;
+	
+	font-weight: bold;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+		margin: 10px 15px 0px 15px; /* top, right, bottom, left */
+	}
+	
+
+
+/*meet the team section */
+
+/* Three columns side by side */
+.column {
+	text-align: left;
+	  padding: 15px;
+	  float: left;
+	 /* 
+	 margin: auto;
+	 margin-bottom: 16px;
+	  margin-top: 16px;
+	  padding-top: 0px;
+	  padding-right: 0px;
+	  padding-bottom: 10px;
+	  padding-left: 0px;*/
+}
+
+.group {
+	margin: auto;
+	margin-top: 100px; /*use to be 100px */
+	margin-bottom: 100px;
+	width: 80%;
+	padding: 20px;
+	text-align:center;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	background-color: white;
+	  align-items: center;
+  justify-content: center;
+}
+
+.row {
+	
+	display: flex; 
+	flex-wrap: wrap;
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+
+
+	
+}
+.row-center{
+	
+
+		  align-items: center;
+  justify-content: center;
+	
+
+}
+.row-left{
+		  align-items: left;
+  justify-content: left;
+	
+}
+/* Display the columns below each other instead of side by side on small screens */
+/*@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}*/
+
+
+
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Padding top right bottom left */
+
+.button  {
+	position: relative;
+	align: center;
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 10px 10px 10px 10px;
+	color: white;
+	background-color: #f28121;
+	border-radius: 50px;
+	border: solid 10px #FFEDDD;
+	text-align: center;
+	font-size:18px;
+	cursor: pointer;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Oswald', sans-serif;
+}
+
+.button:hover {
+  background-color: #587195;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+ .borderbox{
+	 display: flex;
+	margin: 50px 100px 100px 100px; /* margin top, margin right, Margin bottom, Margin left
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.wording{
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	
+	
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
